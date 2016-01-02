@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2557EE931C37E4B2001A8883 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */; };
-		2557EE961C37E4D9001A8883 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EE951C37E4D9001A8883 /* TBHotelInfo.swift */; };
-		2557EE981C37E4F7001A8883 /* TBHotelCSVDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557EE971C37E4F7001A8883 /* TBHotelCSVDataBuilder.swift */; };
 		259534F51C37E351004913F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259534F41C37E351004913F0 /* AppDelegate.swift */; };
 		259534F71C37E351004913F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259534F61C37E351004913F0 /* ViewController.swift */; };
 		259534FA1C37E351004913F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259534F81C37E351004913F0 /* Main.storyboard */; };
 		259534FC1C37E351004913F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259534FB1C37E351004913F0 /* Assets.xcassets */; };
 		259534FF1C37E351004913F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259534FD1C37E351004913F0 /* LaunchScreen.storyboard */; };
+		25B9A7341C38244300CC5334 /* TBHotelCSVDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7321C38244300CC5334 /* TBHotelCSVDataBuilder.swift */; };
+		25B9A7351C38244300CC5334 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7331C38244300CC5334 /* TBHotelInfo.swift */; };
 		CE5CC63B703409C86EFC6478 /* Pods_RealmHotelsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
-		2557EE951C37E4D9001A8883 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBHotelInfo.swift; sourceTree = "<group>"; };
-		2557EE971C37E4F7001A8883 /* TBHotelCSVDataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBHotelCSVDataBuilder.swift; sourceTree = "<group>"; };
 		259534F11C37E351004913F0 /* RealmHotelsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmHotelsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		259534F41C37E351004913F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259534F61C37E351004913F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +27,8 @@
 		259534FB1C37E351004913F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		259534FE1C37E351004913F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		259535001C37E351004913F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B9A7321C38244300CC5334 /* TBHotelCSVDataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelCSVDataBuilder.swift; path = RealmHotelsExample/TBHotelCSVDataBuilder.swift; sourceTree = "<group>"; };
+		25B9A7331C38244300CC5334 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelInfo.swift; path = RealmHotelsExample/TBHotelInfo.swift; sourceTree = "<group>"; };
 		29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmHotelsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B342AC129EB7F3396A73F6 /* Pods-RealmHotelsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmHotelsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmHotelsExample/Pods-RealmHotelsExample.debug.xcconfig"; sourceTree = "<group>"; };
 		B6752755A5FA6CED6EEA5710 /* Pods-RealmHotelsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmHotelsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmHotelsExample/Pods-RealmHotelsExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 		2557EE941C37E4C6001A8883 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2557EE951C37E4D9001A8883 /* TBHotelInfo.swift */,
-				2557EE971C37E4F7001A8883 /* TBHotelCSVDataBuilder.swift */,
+				25B9A7321C38244300CC5334 /* TBHotelCSVDataBuilder.swift */,
+				25B9A7331C38244300CC5334 /* TBHotelInfo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -238,9 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				259534F71C37E351004913F0 /* ViewController.swift in Sources */,
-				2557EE961C37E4D9001A8883 /* TBHotelInfo.swift in Sources */,
+				25B9A7341C38244300CC5334 /* TBHotelCSVDataBuilder.swift in Sources */,
 				259534F51C37E351004913F0 /* AppDelegate.swift in Sources */,
-				2557EE981C37E4F7001A8883 /* TBHotelCSVDataBuilder.swift in Sources */,
+				25B9A7351C38244300CC5334 /* TBHotelInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
