@@ -24,8 +24,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="entityName" value="TBHotelInfo"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="latitudeKeyPath" value="latitude"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="longitudeKeyPath" value="longitude"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKeyPath" value="name"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="subtitleKeyPath" value="phoneNumber"/>
                                 </userDefinedRuntimeAttributes>
                             </mapView>
                         </subviews>

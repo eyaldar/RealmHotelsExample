@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2557EE931C37E4B2001A8883 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */; };
+		258589211C38AF110024FEDB /* SVPulsingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 258589201C38AF110024FEDB /* SVPulsingAnnotationView.m */; };
 		259534F51C37E351004913F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259534F41C37E351004913F0 /* AppDelegate.swift */; };
 		259534F71C37E351004913F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259534F61C37E351004913F0 /* ViewController.swift */; };
 		259534FA1C37E351004913F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259534F81C37E351004913F0 /* Main.storyboard */; };
@@ -15,11 +16,17 @@
 		259534FF1C37E351004913F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259534FD1C37E351004913F0 /* LaunchScreen.storyboard */; };
 		25B9A7341C38244300CC5334 /* TBHotelCSVDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7321C38244300CC5334 /* TBHotelCSVDataBuilder.swift */; };
 		25B9A7351C38244300CC5334 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7331C38244300CC5334 /* TBHotelInfo.swift */; };
+		25B9A73A1C38263E00CC5334 /* GeoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7391C38263E00CC5334 /* GeoHelper.swift */; };
+		25B9A73C1C3826B700CC5334 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9A73B1C3826B700CC5334 /* CoreLocation.framework */; };
+		25B9A73E1C382A1D00CC5334 /* CustomClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A73D1C382A1D00CC5334 /* CustomClusterAnnotationView.swift */; };
+		25C821831C389D4300A5129C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25C821821C389D4300A5129C /* 1.jpg */; };
 		CE5CC63B703409C86EFC6478 /* Pods_RealmHotelsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
+		2585891F1C38AF110024FEDB /* SVPulsingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVPulsingAnnotationView.h; path = RealmHotelsExample/SVPulsingAnnotationView.h; sourceTree = "<group>"; };
+		258589201C38AF110024FEDB /* SVPulsingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVPulsingAnnotationView.m; path = RealmHotelsExample/SVPulsingAnnotationView.m; sourceTree = "<group>"; };
 		259534F11C37E351004913F0 /* RealmHotelsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmHotelsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		259534F41C37E351004913F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		259534F61C37E351004913F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +36,11 @@
 		259535001C37E351004913F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25B9A7321C38244300CC5334 /* TBHotelCSVDataBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelCSVDataBuilder.swift; path = RealmHotelsExample/TBHotelCSVDataBuilder.swift; sourceTree = "<group>"; };
 		25B9A7331C38244300CC5334 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelInfo.swift; path = RealmHotelsExample/TBHotelInfo.swift; sourceTree = "<group>"; };
+		25B9A7391C38263E00CC5334 /* GeoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeoHelper.swift; path = RealmHotelsExample/GeoHelper.swift; sourceTree = "<group>"; };
+		25B9A73B1C3826B700CC5334 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25B9A73D1C382A1D00CC5334 /* CustomClusterAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClusterAnnotationView.swift; sourceTree = "<group>"; };
+		25C821821C389D4300A5129C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = RealmHotelsExample/1.jpg; sourceTree = "<group>"; };
+		25C8218E1C389E8900A5129C /* RealmHotelsExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealmHotelsExample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmHotelsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B342AC129EB7F3396A73F6 /* Pods-RealmHotelsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmHotelsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmHotelsExample/Pods-RealmHotelsExample.debug.xcconfig"; sourceTree = "<group>"; };
 		B6752755A5FA6CED6EEA5710 /* Pods-RealmHotelsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmHotelsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmHotelsExample/Pods-RealmHotelsExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B9A73C1C3826B700CC5334 /* CoreLocation.framework in Frameworks */,
 				CE5CC63B703409C86EFC6478 /* Pods_RealmHotelsExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */,
+				25C821821C389D4300A5129C /* 1.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -63,9 +77,20 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		2585891B1C38A1540024FEDB /* SVPulsingAnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				2585891F1C38AF110024FEDB /* SVPulsingAnnotationView.h */,
+				258589201C38AF110024FEDB /* SVPulsingAnnotationView.m */,
+			);
+			name = SVPulsingAnnotationView;
+			sourceTree = "<group>";
+		};
 		259534E81C37E351004913F0 = {
 			isa = PBXGroup;
 			children = (
+				2585891B1C38A1540024FEDB /* SVPulsingAnnotationView */,
+				25B9A7361C38260000CC5334 /* GeoHelper */,
 				2557EE941C37E4C6001A8883 /* Model */,
 				2557EE911C37E4A0001A8883 /* Supporting Files */,
 				259534F31C37E351004913F0 /* RealmHotelsExample */,
@@ -86,19 +111,30 @@
 		259534F31C37E351004913F0 /* RealmHotelsExample */ = {
 			isa = PBXGroup;
 			children = (
+				25C8218E1C389E8900A5129C /* RealmHotelsExample-Bridging-Header.h */,
 				259534F41C37E351004913F0 /* AppDelegate.swift */,
 				259534F61C37E351004913F0 /* ViewController.swift */,
 				259534F81C37E351004913F0 /* Main.storyboard */,
 				259534FB1C37E351004913F0 /* Assets.xcassets */,
 				259534FD1C37E351004913F0 /* LaunchScreen.storyboard */,
 				259535001C37E351004913F0 /* Info.plist */,
+				25B9A73D1C382A1D00CC5334 /* CustomClusterAnnotationView.swift */,
 			);
 			path = RealmHotelsExample;
+			sourceTree = "<group>";
+		};
+		25B9A7361C38260000CC5334 /* GeoHelper */ = {
+			isa = PBXGroup;
+			children = (
+				25B9A7391C38263E00CC5334 /* GeoHelper.swift */,
+			);
+			name = GeoHelper;
 			sourceTree = "<group>";
 		};
 		28DE2F4272A84032A50AC923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25B9A73B1C3826B700CC5334 /* CoreLocation.framework */,
 				29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */,
 			);
 			name = Frameworks;
@@ -179,6 +215,7 @@
 				259534FC1C37E351004913F0 /* Assets.xcassets in Resources */,
 				259534FA1C37E351004913F0 /* Main.storyboard in Resources */,
 				2557EE931C37E4B2001A8883 /* USA-HotelMotel.csv in Resources */,
+				25C821831C389D4300A5129C /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +276,11 @@
 			files = (
 				259534F71C37E351004913F0 /* ViewController.swift in Sources */,
 				25B9A7341C38244300CC5334 /* TBHotelCSVDataBuilder.swift in Sources */,
+				25B9A73A1C38263E00CC5334 /* GeoHelper.swift in Sources */,
 				259534F51C37E351004913F0 /* AppDelegate.swift in Sources */,
+				258589211C38AF110024FEDB /* SVPulsingAnnotationView.m in Sources */,
 				25B9A7351C38244300CC5334 /* TBHotelInfo.swift in Sources */,
+				25B9A73E1C382A1D00CC5334 /* CustomClusterAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +394,15 @@
 			baseConfigurationReference = 52B342AC129EB7F3396A73F6 /* Pods-RealmHotelsExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = RealmHotelsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eyaldar.RealmHotelsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RealmHotelsExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "RealmHotelsExample/**";
 			};
 			name = Debug;
 		};
@@ -366,10 +411,14 @@
 			baseConfigurationReference = B6752755A5FA6CED6EEA5710 /* Pods-RealmHotelsExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = RealmHotelsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eyaldar.RealmHotelsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RealmHotelsExample-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "RealmHotelsExample/**";
 			};
 			name = Release;
 		};

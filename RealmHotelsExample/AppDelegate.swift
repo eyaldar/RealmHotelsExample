@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RealmHotelsExample
 //
-//  Created by Ran Ovadia on 1/2/16.
+//  Created by Eyal Darshan on 1/2/16.
 //  Copyright © 2016 eyaldar. All rights reserved.
 //
 
