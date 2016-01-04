@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCalloutView">
+            <connections>
+                <outlet property="button" destination="idt-sb-MxF" id="b1h-oj-8G2"/>
+                <outlet property="button2" destination="QkW-R2-UBb" id="nmc-w2-nfE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idt-sb-MxF">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="0uL-GF-3wy"/>
+                        <constraint firstAttribute="height" constant="45" id="Mxu-Vi-KEs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <size key="titleShadowOffset" width="5" height="5"/>
+                    <state key="normal" image="camera_icon.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="aXz-Vf-VMV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkW-R2-UBb">
+                    <rect key="frame" x="42" y="36" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="7tI-R5-vQk"/>
+                        <constraint firstAttribute="height" constant="45" id="Xl5-CY-gQ8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
+                    <state key="normal" title="i">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="IAH-fW-8zS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="idt-sb-MxF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4tH-E6-rrb"/>
+                <constraint firstItem="QkW-R2-UBb" firstAttribute="leading" secondItem="idt-sb-MxF" secondAttribute="trailing" constant="-3" id="PTU-xm-9yc"/>
+                <constraint firstItem="QkW-R2-UBb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="36" id="QPw-c9-BQx"/>
+                <constraint firstItem="idt-sb-MxF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eI4-0q-uXE"/>
+            </constraints>
+            <point key="canvasLocation" x="518" y="362"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_icon.png" width="256" height="256"/>
+    </resources>
+</document>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250713751C3B2EE0008C7523 /* CustomAnnotationWithCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250713721C3B2EE0008C7523 /* CustomAnnotationWithCalloutView.swift */; };
+		250713761C3B2EE0008C7523 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250713731C3B2EE0008C7523 /* CustomCalloutView.swift */; };
+		250713771C3B2EE0008C7523 /* CustomCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250713741C3B2EE0008C7523 /* CustomCalloutView.xib */; };
+		250713791C3B2F11008C7523 /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 250713781C3B2F11008C7523 /* camera_icon.png */; };
 		2557EE931C37E4B2001A8883 /* USA-HotelMotel.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */; };
 		258589211C38AF110024FEDB /* SVPulsingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 258589201C38AF110024FEDB /* SVPulsingAnnotationView.m */; };
 		259534F51C37E351004913F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259534F41C37E351004913F0 /* AppDelegate.swift */; };
@@ -18,12 +22,15 @@
 		25B9A7351C38244300CC5334 /* TBHotelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7331C38244300CC5334 /* TBHotelInfo.swift */; };
 		25B9A73A1C38263E00CC5334 /* GeoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A7391C38263E00CC5334 /* GeoHelper.swift */; };
 		25B9A73C1C3826B700CC5334 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9A73B1C3826B700CC5334 /* CoreLocation.framework */; };
-		25B9A73E1C382A1D00CC5334 /* CustomClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9A73D1C382A1D00CC5334 /* CustomClusterAnnotationView.swift */; };
 		25C821831C389D4300A5129C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25C821821C389D4300A5129C /* 1.jpg */; };
 		CE5CC63B703409C86EFC6478 /* Pods_RealmHotelsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250713721C3B2EE0008C7523 /* CustomAnnotationWithCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomAnnotationWithCalloutView.swift; path = RealmHotelsExample/CustomAnnotationWithCalloutView.swift; sourceTree = "<group>"; };
+		250713731C3B2EE0008C7523 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCalloutView.swift; path = RealmHotelsExample/CustomCalloutView.swift; sourceTree = "<group>"; };
+		250713741C3B2EE0008C7523 /* CustomCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCalloutView.xib; path = RealmHotelsExample/CustomCalloutView.xib; sourceTree = "<group>"; };
+		250713781C3B2F11008C7523 /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_icon.png; path = RealmHotelsExample/camera_icon.png; sourceTree = "<group>"; };
 		2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "USA-HotelMotel.csv"; sourceTree = "<group>"; };
 		2585891F1C38AF110024FEDB /* SVPulsingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVPulsingAnnotationView.h; path = RealmHotelsExample/SVPulsingAnnotationView.h; sourceTree = "<group>"; };
 		258589201C38AF110024FEDB /* SVPulsingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVPulsingAnnotationView.m; path = RealmHotelsExample/SVPulsingAnnotationView.m; sourceTree = "<group>"; };
@@ -38,7 +45,6 @@
 		25B9A7331C38244300CC5334 /* TBHotelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TBHotelInfo.swift; path = RealmHotelsExample/TBHotelInfo.swift; sourceTree = "<group>"; };
 		25B9A7391C38263E00CC5334 /* GeoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeoHelper.swift; path = RealmHotelsExample/GeoHelper.swift; sourceTree = "<group>"; };
 		25B9A73B1C3826B700CC5334 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		25B9A73D1C382A1D00CC5334 /* CustomClusterAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClusterAnnotationView.swift; sourceTree = "<group>"; };
 		25C821821C389D4300A5129C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = RealmHotelsExample/1.jpg; sourceTree = "<group>"; };
 		25C8218E1C389E8900A5129C /* RealmHotelsExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealmHotelsExample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		29ADF2971ECB3D224903A28E /* Pods_RealmHotelsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmHotelsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,11 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2507136B1C3B21C4008C7523 /* AnnotationWithCallout */ = {
+			isa = PBXGroup;
+			children = (
+				250713721C3B2EE0008C7523 /* CustomAnnotationWithCalloutView.swift */,
+				250713731C3B2EE0008C7523 /* CustomCalloutView.swift */,
+				250713741C3B2EE0008C7523 /* CustomCalloutView.xib */,
+			);
+			name = AnnotationWithCallout;
+			sourceTree = "<group>";
+		};
 		2557EE911C37E4A0001A8883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				2557EE921C37E4B2001A8883 /* USA-HotelMotel.csv */,
 				25C821821C389D4300A5129C /* 1.jpg */,
+				250713781C3B2F11008C7523 /* camera_icon.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -89,6 +106,7 @@
 		259534E81C37E351004913F0 = {
 			isa = PBXGroup;
 			children = (
+				2507136B1C3B21C4008C7523 /* AnnotationWithCallout */,
 				2585891B1C38A1540024FEDB /* SVPulsingAnnotationView */,
 				25B9A7361C38260000CC5334 /* GeoHelper */,
 				2557EE941C37E4C6001A8883 /* Model */,
@@ -118,7 +136,6 @@
 				259534FB1C37E351004913F0 /* Assets.xcassets */,
 				259534FD1C37E351004913F0 /* LaunchScreen.storyboard */,
 				259535001C37E351004913F0 /* Info.plist */,
-				25B9A73D1C382A1D00CC5334 /* CustomClusterAnnotationView.swift */,
 			);
 			path = RealmHotelsExample;
 			sourceTree = "<group>";
@@ -212,9 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				259534FF1C37E351004913F0 /* LaunchScreen.storyboard in Resources */,
+				250713791C3B2F11008C7523 /* camera_icon.png in Resources */,
 				259534FC1C37E351004913F0 /* Assets.xcassets in Resources */,
 				259534FA1C37E351004913F0 /* Main.storyboard in Resources */,
 				2557EE931C37E4B2001A8883 /* USA-HotelMotel.csv in Resources */,
+				250713771C3B2EE0008C7523 /* CustomCalloutView.xib in Resources */,
 				25C821831C389D4300A5129C /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,13 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250713751C3B2EE0008C7523 /* CustomAnnotationWithCalloutView.swift in Sources */,
 				259534F71C37E351004913F0 /* ViewController.swift in Sources */,
 				25B9A7341C38244300CC5334 /* TBHotelCSVDataBuilder.swift in Sources */,
 				25B9A73A1C38263E00CC5334 /* GeoHelper.swift in Sources */,
+				250713761C3B2EE0008C7523 /* CustomCalloutView.swift in Sources */,
 				259534F51C37E351004913F0 /* AppDelegate.swift in Sources */,
 				258589211C38AF110024FEDB /* SVPulsingAnnotationView.m in Sources */,
 				25B9A7351C38244300CC5334 /* TBHotelInfo.swift in Sources */,
-				25B9A73E1C382A1D00CC5334 /* CustomClusterAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

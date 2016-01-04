@@ -57,7 +57,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             locationManager.delegate = self
             mapView.showsUserLocation = true
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
+            locationManager.startMonitoringSignificantLocationChanges()
         }
     }
     
@@ -76,19 +76,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             self.mapView.refreshMapView()
         } else {
             timer.invalidate()
-        }
-    }
-
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-        if let safeObjects = ABFClusterAnnotationView.safeObjectsForClusterAnnotationView(view) {
-            if safeObjects.count > 1 {
-                if let firstObjectName = safeObjects.first?.toObject(TBHotelInfo).name {
-                    print("First Object: \(firstObjectName)")
-                }
-            } else {
-                //NSBundle.mainBundle().loadNibNamed("SingleAnnotationCalloutView", owner: self, options: nil)
-                //let hitPoint = view.convertPoint(CGPointZero, toView: mapView)
-            }
         }
     }
 
@@ -114,8 +101,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             var annotationView:SVPulsingAnnotationView? = mapView.dequeueReusableAnnotationViewWithIdentifier("MyLocation") as? SVPulsingAnnotationView
             
             if annotationView == nil {
-                annotationView = SVPulsingAnnotationView(annotation: annotation, reuseIdentifier: "MyLocation")
-                annotationView?.canShowCallout = true
+                annotationView = CustomAnnotationWithCalloutView(annotation: annotation, reuseIdentifier: "MyLocation")
                 annotationView?.annotationColor = UIColor(red:0.2, green: 0.4, blue: 1, alpha: 1)
                 annotationView?.image = profileImage
             }
@@ -126,6 +112,41 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         
         return nil
+    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        
+        if let safeObjects = ABFClusterAnnotationView.safeObjectsForClusterAnnotationView(view) {
+            if safeObjects.count > 1 {
+                if let firstObjectName = safeObjects.first?.toObject(TBHotelInfo).name {
+                    print("First Object: \(firstObjectName)")
+                }
+            }
+        }
+        
+        if let annotationView = view as? CustomAnnotationWithCalloutView {
+            updatePinPosition(annotationView)
+        }
+    }
+    
+    func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
+        if let annotationView = view as? CustomAnnotationWithCalloutView {
+            if annotationView.preventDeselection {
+                mapView.selectAnnotation(view.annotation!, animated: false)
+            }
+        }
+    }
+    
+    func updatePinPosition(pin:CustomAnnotationWithCalloutView) {
+        let defaultShift:CGFloat = 50
+        let pinPosition = CGPointMake(pin.frame.midX, pin.frame.maxY)
+        
+        let y = pinPosition.y - defaultShift
+        
+        let controlPoint = CGPointMake(pinPosition.x, y)
+        let controlPointCoordinate = mapView.convertPoint(controlPoint, toCoordinateFromView: mapView)
+        
+        mapView.setCenterCoordinate(controlPointCoordinate, animated: true)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
